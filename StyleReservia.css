@@ -1,4 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+
 /* En Tête */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .logoreservia {
   width: 100px;
   height: 50px;
@@ -6,28 +22,295 @@
   margin-top: 20px;
 }
 
-.navbar {
-  position: absolute;
-  margin-right: 30px;
-}
-
 .listenav {
   list-style: none;
   display: flex;
-  cursor: pointer;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 40px 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.listenav li {
+  margin-left: 60px;
+}
+
+.navli3 {
+  margin-right: 30px;
+  color: #0065fc;
+}
+
+#Hébergements {
+  color: #0065fc;
+  border-top: solid 1px #0065fc;
+  display: inline;
+  padding-top: 37px;
+}
+
+#Activités {
+  color: #969292;
+}
+
+#Sinscrire {
+  font-weight: bold;
+  color: #0065fc;
 }
 
 .h1entête {
   margin-left: 30px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
 }
 
-.Soustitreh1 {
+.Soustitreh2 {
+  color: #969292;
   margin-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+form {
+  margin-left: 30px;
+}
+
+#logomap {
+  border: #f2f2f2 solid 12px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #f2f2f2;
+}
+
+input {
+  border: #f2f2f2 solid 1px;
+  height: 40px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+button {
+  font-family: "Raleway", sans-serif;
+  background-color: #0065fc;
+  border: 2px;
+  height: 40px;
+  width: 90px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+}
+
+/* FILTRES */
+.Titrefiltres {
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  margin-right: 30px;
+  font-size: 1rem;
+}
+
+.Filtres {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.Soustitresfiltreslogo {
+  width: 30px;
+  height: 30px;
+  background-color: #deebff;
+  border: 1px solid #deebff;
+  border-radius: 20px;
+}
+
+.Soustitresfiltres {
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  border: 2px solid #f2f2f2;
+  border-radius: 12px;
+  align-items: center;
+  text-align: center;
+}
+
+.Soustitresfiltreslogo1 {
+  color: blue;
+  align-items: center;
+}
+
+.Resultatsfiltres {
+  display: flex;
+  align-items: center;
+}
+
+.Resultatsfiltreslogo {
+  height: 1rem;
+  width: 1rem;
+  border: solid 1px #d9d9d9;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+.Resultatsfiltreslogoicone {
+  color: #0065fc;
+  font-size: 10px;
+}
+
+.Resultatfiltrestexte {
+  font-family: "Raleway", sans-serif;
+  color: #969292;
+  font-size: 0.7rem;
+}
+
+/* Hébergements à Marseille */
+
+.Hebergements {
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-right: 500px;
+}
+
+.HebergementsMarseilletitre {
+  margin-left: 30px;
+  margin-top: 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+}
+
+.HebergementsMarseillechoix {
+  margin-left: 30px;
+  margin-top: 30px;
+  border: solid 1px white;
+  background-color: white;
+  border-radius: 12px;
+  width: 197px;
+  height: 170px;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.7rem;
+}
+
+.imageshebergements {
+  width: 190px;
+  height: 100px;
+  border-radius: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2px;
+}
+
+.Titreh3hebergements {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.Soustitreh3hebergements {
+  color: #969292;
+  margin-left: 10px;
+}
+
+.Etoileshebergements {
+  margin-left: 10px;
+}
+
+.etoilespleineshebergement {
+  color: #0065fc;
+}
+
+.etoilesvideshebergement {
   color: #969292;
 }
 
-.filtres {
-  list-style: none;
+.Afficherplus {
+  font-family: "Raleway", sans-serif;
+  margin-left: 30px;
+}
+
+/*Hebergements les plus populaires*/
+.Hébergementspopulaires {
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  width: 400px;
+  height: 450px;
+}
+
+.Hebergementspopulairesh2 {
+  font-family: "Raleway", sans-serif;
+}
+
+.Hebergementspopulaireschoix {
+  margin-left: 30px;
+  margin-top: 30px;
+  border: solid 1px white;
+  background-color: white;
+  border-radius: 12px;
+  width: 300px;
+  height: 85px;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.7rem;
+}
+
+.textehebergementspopulaires {
+  font-family: "Raleway", sans-serif;
+  float: right;
+}
+
+.imageshebergementspopulaires {
+  width: 80px;
+  height: 80px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  display: block;
+  margin-left: 2px;
+  margin-top: 2px;
+}
+
+/*Activités*/
+
+.ActivitésMarseille {
+  margin-top: 40px;
+  margin-left: 30px;
+}
+.ActivitésMarseilleh2 {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 20px;
+}
+
+.articlevieuxport {
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 8px 5px 5px rgb(207, 207, 207);
+}
+
+.Imagevieuxport {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  width: 350px;
+  height: 500px;
+}
+
+.activitésvieuxporth3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+}
+
+/* Pied de page */
+footer {
+  background-color: #f2f2f2;
+  font-family: "Raleway", sans-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
-  cursor: pointer;
+  justify-content: space-between;
+  align-items: baseline;
+  align-content: stretch;
+  line-height: 30px;
 }
