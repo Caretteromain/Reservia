@@ -37,9 +37,14 @@ header {
   margin-left: 60px;
 }
 
+.listenav li a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 #Hébergements {
   color: #0065fc;
-  border-top: solid 1px #0065fc;
+  border-top: solid 2px #0065fc;
   padding-top: 39px;
 }
 
@@ -115,7 +120,6 @@ button {
   width: 700px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin: 30px;
 }
@@ -133,15 +137,20 @@ button {
 }
 
 .Soustitresfiltres {
-  padding: 10px;
   height: 40px;
   background-color: white;
   border: 2px solid #f2f2f2;
   border-radius: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-family: "Raleway", sans-serif;
+  margin-left: 1px;
+}
+
+.Titrefiltrelien {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .Soustitresfiltreslogo1 {
@@ -218,7 +227,7 @@ button {
   height: 190px;
   font-family: "Raleway", sans-serif;
   font-size: 0.7rem;
-  box-shadow: 8px 5px 5px rgb(207, 207, 207);
+  box-shadow: 5px 3px 5px rgba(224, 220, 220, 0.938);
 }
 
 .imageshebergements {
@@ -295,7 +304,7 @@ button {
   height: 135px;
   font-family: "Raleway", sans-serif;
   font-size: 0.7rem;
-  box-shadow: 8px 5px 5px rgb(207, 207, 207);
+  box-shadow: 5px 3px 5px rgba(224, 220, 220, 0.938);
 }
 
 .textehebergementspopulaires1 {
@@ -370,7 +379,7 @@ button {
 
 .articlevieuxport {
   border-radius: 12px;
-  box-shadow: 8px 5px 5px rgb(207, 207, 207);
+  box-shadow: 5px 3px 5px rgba(224, 220, 220, 0.938);
 }
 
 .Imagevieuxport {
@@ -379,6 +388,7 @@ button {
   background-size: cover;
   width: 280px;
   height: 400px;
+  object-fit: cover;
 }
 
 .activitésh3 {
@@ -388,7 +398,7 @@ button {
 
 .articlefortpomègues {
   border-radius: 12px;
-  box-shadow: 8px 5px 5px rgb(207, 207, 207);
+  box-shadow: 5px 3px 5px rgba(224, 220, 220, 0.938);
 }
 
 .Imagefortpomègues {
@@ -397,11 +407,12 @@ button {
   background-size: cover;
   width: 280px;
   height: 200px;
+  object-fit: cover;
 }
 
 .articleilesdufrioul {
   border-radius: 12px;
-  box-shadow: 8px 5px 5px rgb(207, 207, 207);
+  box-shadow: 5px 3px 5px rgba(224, 220, 220, 0.938);
   position: absolute;
   margin-left: 310px;
   padding-top: 275px;
@@ -413,11 +424,12 @@ button {
   background-size: cover;
   width: 280px;
   height: 125px;
+  object-fit: cover;
 }
 
 .articleparcnationaldescalanques {
   border-radius: 12px;
-  box-shadow: 8px 5px 5px rgb(207, 207, 207);
+  box-shadow: 5px 3px 5px rgba(224, 220, 220, 0.938);
 }
 
 .Imageparcnationaldescalanques {
@@ -426,11 +438,12 @@ button {
   background-size: cover;
   width: 280px;
   height: 400px;
+  object-fit: cover;
 }
 
 .articlenotredamedelagarde {
   border-radius: 12px;
-  box-shadow: 8px 5px 5px rgb(207, 207, 207);
+  box-shadow: 5px 3px 5px rgba(224, 220, 220, 0.938);
 }
 
 .Imagenotredamedelagarde {
@@ -439,11 +452,12 @@ button {
   background-size: cover;
   width: 280px;
   height: 125px;
+  object-fit: cover;
 }
 
 .articleparclongchamp {
   border-radius: 12px;
-  box-shadow: 8px 5px 5px rgb(207, 207, 207);
+  box-shadow: 5px 3px 5px rgba(224, 220, 220, 0.938);
   position: absolute;
   margin-left: 940px;
   padding-top: 200px;
@@ -455,21 +469,22 @@ button {
   background-size: cover;
   width: 280px;
   height: 200px;
+  object-fit: cover;
 }
 
 /* Pied de page */
 footer {
   background-color: #f2f2f2;
-  height: 180px;
+  height: 190px;
   font-family: "Raleway", sans-serif;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  margin-top: 50px;
   line-height: 35px;
   font-weight: 100;
-  margin-top: 50px;
 }
 
 .Colonnes {
   margin-left: -200px;
+  margin-top: 30px;
 }
