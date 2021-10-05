@@ -106,6 +106,75 @@ button {
   color: white;
 }
 
+/* Nouvelles règles si la fenêtre fait moins de 768px */
+@media screen and (max-width: 768px) {
+  input {
+    border: #f2f2f2 solid 1px;
+    width: 330px;
+  }
+
+  .h1entête {
+    font-size: 2rem;
+    padding-top: 20px;
+  }
+
+  .Soustitreh2 {
+    padding-bottom: 40px;
+    padding-top: 20px;
+    font-size: 1.3rem;
+    font-weight: lighter;
+  }
+
+  .listenav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: none;
+    margin-right: 0px;
+    font-size: 1.3rem;
+  }
+
+  .listenav li {
+    margin-left: none;
+  }
+
+  .listenav {
+    margin-left: -170px;
+    padding-bottom: 20px;
+  }
+
+  .listenav li a {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .navbar {
+    margin-top: 70px;
+    margin-right: 1100px;
+  }
+
+  .divsinscrire {
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 310px;
+  }
+
+  #Hébergements {
+    color: #0065fc;
+    border-top: none;
+    padding-top: none;
+    border-bottom: solid 2px #0065fc;
+    padding-bottom: 20px;
+  }
+
+  #Activités {
+    border-bottom: solid 2px #f2f2f2;
+    padding-bottom: 20px;
+  }
+}
+
 /* FILTRES */
 .Titrefiltres {
   display: flex;
@@ -192,6 +261,24 @@ button {
   margin-bottom: 20px;
 }
 
+/* Nouvelles règles si la fenêtre fait moins de 768px */
+@media screen and (max-width: 768px) {
+  .Filtres {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .Titrefiltres {
+    display: flex;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  .Soustitresfiltres {
+    width: 200px;
+  }
+}
+
 /* Hébergements à Marseille */
 
 .HébergmentsàMarseille {
@@ -227,7 +314,7 @@ button {
   height: 190px;
   font-family: "Raleway", sans-serif;
   font-size: 0.7rem;
-  box-shadow: 5px 3px 5px rgba(224, 220, 220, 0.938);
+  box-shadow: 0px 0px 19px 0px rgba(224, 220, 220, 0.938);
 }
 
 .imageshebergements {
@@ -238,6 +325,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-top: 2px;
+  object-fit: cover;
 }
 
 .Titreh3hebergements {
@@ -269,6 +357,40 @@ button {
   margin-left: 30px;
   margin-top: 30px;
   margin-bottom: 20px;
+}
+
+/* Nouvelles règles si la fenêtre fait moins de 768px */
+@media screen and (max-width: 768px) {
+  .HébergmentsàMarseille {
+    background: none;
+  }
+
+  .HébergementsàMarseilleh2 {
+    padding-top: 650px;
+    margin-left: 0px;
+  }
+
+  .Hebergements {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .HebergementsMarseillechoix {
+    width: 435px;
+    height: 200px;
+    margin-left: 0px;
+  }
+
+  .imageshebergements {
+    width: 425px;
+    height: 120px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .Afficherplus {
+    margin-left: 0px;
+  }
 }
 
 /*Hebergements les plus populaires*/
@@ -304,7 +426,7 @@ button {
   height: 135px;
   font-family: "Raleway", sans-serif;
   font-size: 0.7rem;
-  box-shadow: 5px 3px 5px rgba(224, 220, 220, 0.938);
+  box-shadow: 0px 0px 19px 0px rgba(224, 220, 220, 0.938);
 }
 
 .textehebergementspopulaires1 {
@@ -352,6 +474,61 @@ button {
   display: block;
   margin-left: 2px;
   margin-top: 2px;
+  object-fit: cover;
+}
+
+/* Nouvelles règles si la fenêtre fait moins de 768px */
+@media screen and (max-width: 768px) {
+  .Hébergementspopulaires {
+    width: 500px;
+    height: 600px;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    margin-left: 0px;
+    border-radius: 0px;
+  }
+
+  .Hebergementspopulaireschoix {
+    width: 435px;
+    height: 150px;
+  }
+
+  .imageshebergementspopulaires {
+    height: 143px;
+    width: 143px;
+  }
+
+  .textehebergementspopulaires1 {
+    top: 665px;
+    right: 160px;
+  }
+
+  .textehebergementspopulaires2 {
+    top: 835px;
+    right: 189px;
+  }
+
+  .textehebergementspopulaires3 {
+    top: 1005px;
+    right: 154px;
+  }
+
+  .etoileshebergementspop {
+    margin-top: 75px;
+  }
+
+  .etoileshebergementspop2 {
+    margin-top: 65px;
+  }
+
+  .etoileshebergementspop3 {
+    margin-top: 80px;
+  }
+
+  .logopopulaire {
+    margin-left: 230px;
+  }
 }
 
 /*Activités*/
@@ -379,7 +556,7 @@ button {
 
 .articlevieuxport {
   border-radius: 12px;
-  box-shadow: 5px 3px 5px rgba(224, 220, 220, 0.938);
+  box-shadow: 0px 0px 19px 0px rgba(224, 220, 220, 0.938);
 }
 
 .Imagevieuxport {
@@ -398,7 +575,7 @@ button {
 
 .articlefortpomègues {
   border-radius: 12px;
-  box-shadow: 5px 3px 5px rgba(224, 220, 220, 0.938);
+  box-shadow: 0px 0px 19px 0px rgba(224, 220, 220, 0.938);
 }
 
 .Imagefortpomègues {
@@ -412,7 +589,7 @@ button {
 
 .articleilesdufrioul {
   border-radius: 12px;
-  box-shadow: 5px 3px 5px rgba(224, 220, 220, 0.938);
+  box-shadow: 0px 0px 19px 0px rgba(224, 220, 220, 0.938);
   position: absolute;
   margin-left: 310px;
   padding-top: 275px;
@@ -429,7 +606,7 @@ button {
 
 .articleparcnationaldescalanques {
   border-radius: 12px;
-  box-shadow: 5px 3px 5px rgba(224, 220, 220, 0.938);
+  box-shadow: 0px 0px 19px 0px rgba(224, 220, 220, 0.938);
 }
 
 .Imageparcnationaldescalanques {
@@ -443,7 +620,7 @@ button {
 
 .articlenotredamedelagarde {
   border-radius: 12px;
-  box-shadow: 5px 3px 5px rgba(224, 220, 220, 0.938);
+  box-shadow: 0px 0px 19px 0px rgba(224, 220, 220, 0.938);
 }
 
 .Imagenotredamedelagarde {
@@ -457,7 +634,7 @@ button {
 
 .articleparclongchamp {
   border-radius: 12px;
-  box-shadow: 5px 3px 5px rgba(224, 220, 220, 0.938);
+  box-shadow: 0px 0px 19px 0px rgba(224, 220, 220, 0.938);
   position: absolute;
   margin-left: 940px;
   padding-top: 200px;
@@ -470,6 +647,73 @@ button {
   width: 280px;
   height: 200px;
   object-fit: cover;
+}
+
+/* Nouvelles règles si la fenêtre fait moins de 768px */
+@media screen and (max-width: 768px) {
+  .ActivitésMarseille {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .activitésh2 {
+    padding-top: 1500px;
+  }
+
+  .Imagevieuxport {
+    width: 435px;
+    height: 200px;
+  }
+
+  .articlefortpomègues {
+    margin-top: 20px;
+  }
+
+  .Imagefortpomègues {
+    width: 435px;
+    height: 200px;
+  }
+
+  .Imageilesdufrioul {
+    width: 435px;
+    height: 200px;
+  }
+  .articleilesdufrioul {
+    position: relative;
+    margin-left: 0px;
+    padding-top: 0px;
+    margin-top: 20px;
+  }
+
+  .Imageparcnationaldescalanques {
+    width: 435px;
+    height: 200px;
+  }
+
+  .articleparcnationaldescalanques {
+    margin-top: 20px;
+  }
+
+  .Imagenotredamedelagarde {
+    width: 435px;
+    height: 200px;
+  }
+
+  .articlenotredamedelagarde {
+    margin-top: 20px;
+  }
+
+  .Imageparclongchamp {
+    width: 435px;
+    height: 200px;
+  }
+
+  .articleparclongchamp {
+    position: relative;
+    margin-left: 0px;
+    padding-top: 0px;
+    margin-top: 20px;
+  }
 }
 
 /* Pied de page */
@@ -487,4 +731,18 @@ footer {
 .Colonnes {
   margin-left: -200px;
   margin-top: 30px;
+}
+
+/* Nouvelles règles si la fenêtre fait moins de 768px */
+@media screen and (max-width: 768px) {
+  footer {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+  }
+
+  .Colonnes {
+    margin-left: 0px;
+  }
 }
